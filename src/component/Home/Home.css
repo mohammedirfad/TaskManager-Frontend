@@ -25,7 +25,7 @@ body {
 }
 
 .display{
-	font-size: 20px;
+	font-size: 23px;
 	margin-top: 50px;
 	text-decoration: solid;
 	font-weight: bold;
@@ -34,6 +34,10 @@ body {
 .display .name {
 	color: #AF1E2D;
 	text-transform: capitalize;
+}
+
+.img-display{
+	margin-top: 10px;
 }
 h1 {
 	font-size: 40px;
@@ -63,11 +67,15 @@ h4 {
     justify-content: center;
     align-items: stretch;
     gap: 10px;
+	margin-top: 88px;
 }
 .input-box{
-	width: 230px;
-	border-radius: 4px;
-	color: black;
+	width: 340px;
+    height: 55px;
+    padding: 10px;
+    text-decoration-color: black;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .input-button{

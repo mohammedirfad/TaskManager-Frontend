@@ -2,7 +2,7 @@ import Axios from "axios";
 
 const axiosInstance = Axios.create({
   
-  baseURL: "https://taskmanager-backend-va4k.onrender.com",
+  baseURL: "http://localhost:8000",
   headers: {
      "Content-Type": "application/json",
   },
