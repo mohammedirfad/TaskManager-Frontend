@@ -1,0 +1,79 @@
+/* Login.css */
+.cover{
+    width: 100%;
+    height: 100%;
+   
+    background-image: url("https://media.istockphoto.com/id/1313663173/video/blank-yellow-background-educational-subject.jpg?s=640x640&k=20&c=7cAmsTMzMfq8ZyWeOYHNdTJ6CSe-oPqX2JxqjtSidVM=");
+    background-repeat:space;
+    background-size: cover;
+}
+.login-container {
+  max-width: 400px;
+  margin: 110px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+ 
+  
+}
+.login-container h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.reg-link{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.reg-link span{
+    color: #ff0000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="name"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 16px;
+  margin-top: 10px;
+}
