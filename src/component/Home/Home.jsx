@@ -10,7 +10,7 @@ import todoImage from '../../Assets/todo-image.jpeg'
 
 function Home() {
 
-    const [statusInput, setStatusInput] = useState(true);
+    // const [statusInput, setStatusInput] = useState(true);
     const [content, setContent] = useState("");
     const [todos, setTodos] = useState([]);
     
@@ -20,11 +20,7 @@ function Home() {
    
 
     useEffect(() => {
-		GetTodos();
-	}, [token]);
-
-
-//get-your-todo
+        //get-your-todo
     const GetTodos = async () => {
 		try{
             const response = await getTodos(token);
@@ -38,6 +34,24 @@ function Home() {
         }
 	}
 
+		GetTodos();
+	}, [token]);
+
+
+// //get-your-todo
+//     const GetTodos = async () => {
+// 		try{
+//             const response = await getTodos(token);
+//         if(response?.status === 200){
+//             console.log(response);
+//             setTodos(response?.data?.tasks);
+//         } 
+//         }
+//         catch(err){
+//             console.log(err);
+//         }
+// 	}
+
 //-add-your-todo
    async function handleSubmit(e) {
         e.preventDefault();
@@ -46,7 +60,7 @@ function Home() {
         if (!taskText) {
            
           toast.error("Enter The task !")
-          setStatusInput(false);
+        
     
           return setContent("");
         }
