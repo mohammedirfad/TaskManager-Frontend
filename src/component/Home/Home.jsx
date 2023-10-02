@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import './Home.css'
 import { DeleteTodo, addTodo, completetodo, getTodos } from '../../Api/Services/taskMange';
@@ -17,11 +17,11 @@ function Home() {
     const token = useSelector(state => state?.userAuth?.token);
     const Name =useSelector(state => state?.userAuth?.name)
     const Navigate = useNavigate();
-    const dispatch = useDispatch();
+   
 
     useEffect(() => {
 		GetTodos();
-	}, []);
+	}, [token]);
 
 
 //get-your-todo
