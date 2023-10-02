@@ -10,6 +10,7 @@ const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [success ,setSuccess] = useState("")
   const [backendError, setBackendError] = useState('');
 
   
@@ -33,7 +34,8 @@ const Signup = () => {
 
         if(response?.status === 200 ){
           
-
+          setSuccess(response?.data?.message)
+          Navigate('/login')
         }
         else{
           setBackendError(response?.data?.message)
@@ -81,6 +83,7 @@ const Signup = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
+      {success && <div className="succes-message">{success}</div>}
       {error && <div className="error-message">{error}</div>}
     
       {backendError && <div className="error-message">{backendError}</div>}

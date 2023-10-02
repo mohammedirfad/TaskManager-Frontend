@@ -140,7 +140,7 @@ const deleteTodo = async (id) =>{
       </div>
     )}): <div className=''>
         <p className='display'>Hey ! <span className='name'>{Name}</span> You currently have no tasks</p>
-        <p className='img-display'><img src={todoImage || "https://ouch-cdn2.icons8.com/VGdlqczqVokCME57m8K2CYx65qXfQQx3qJb187MjU1I/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTg4/Lzg2YTMxMTI2LTc4/NzktNDI4My05Yjky/LWYyMjliNDc0OGU4/NC5zdmc.png"} alt='no task'></img></p>
+        <p className='img-display'><img src= "https://ouch-cdn2.icons8.com/VGdlqczqVokCME57m8K2CYx65qXfQQx3qJb187MjU1I/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTg4/Lzg2YTMxMTI2LTc4/NzktNDI4My05Yjky/LWYyMjliNDc0OGU4/NC5zdmc.png" alt='no task'></img></p>
         </div>
 }
       
